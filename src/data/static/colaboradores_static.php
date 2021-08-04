@@ -1,17 +1,10 @@
-
 <?php
-global $static;
-include 'static/colaboradores_static.php';
-include 'src/functions/soma.php';
-include 'src/functions/comissao.php';
-include 'src/functions/sal-final.php';
-
-
-$colaboradores = array(
+//Dados estáticos = Dados que não se alteram
+$colaboradores_static =  array(
     1 => array(
         'Colaborador' => 'José',
         'Sal' => array(
-            'Salário Fixo' => number_format(2000.3, 2,'.','')
+            'Salário Fixo' => number_format(2000.3, 2, '.', '')
         ),
         'Vendas' => array(
             'Venda Semana 1'  => number_format(1500.10, 2, '.', ''),
@@ -20,9 +13,9 @@ $colaboradores = array(
             'Venda Semana 4' => number_format(1900.00, 2, '.', '')
         ),
         'Resultado' => array(
-            'Total Vendas' =>  soma($colaboradores_static)[1],
-            'Comissão' => comissao($colaboradores_static)[1],
-            'Salário Final' => salFinal($colaboradores_static)[1]
+            'Total Vendas' => "",
+            'Comissão' => "",
+            'Salário Final' => ""
         )
     ),
     2 => array(
@@ -37,9 +30,9 @@ $colaboradores = array(
             'Venda Semana 4' => number_format(2100.00, 2, '.', ''),
         ),
         'Resultado' => array(
-            'Total Vendas' => soma($colaboradores_static)[2],
-            'Comissão' => comissao($colaboradores_static)[2],
-            'Salário Final' => salFinal($colaboradores_static)[2]
+            'Total Vendas' => "",
+            'Comissão' => "",
+            'Salário Final' => ""
         )
     ),
     3 => array(
@@ -54,9 +47,9 @@ $colaboradores = array(
             'Venda Semana 4' => number_format(2250.00, 2, '.', ''),
         ),
         'Resultado' => array(
-            'Total Vendas' => soma($colaboradores_static)[3],
-            'Comissão' => comissao($colaboradores_static)[3],
-            'Salário Final' => salFinal($colaboradores_static)[3]
+            'Total Vendas' => "",
+            'Comissão' => "",
+            'Salário Final' => ""
         )
     ),
     4 => array(
@@ -71,18 +64,12 @@ $colaboradores = array(
             'Venda Semana 4' => number_format(1980.00, 2, '.', ''),
         ),
         'Resultado' => array(
-            'Total Vendas' => soma($colaboradores_static)[4],
-            'Comissão' => comissao($colaboradores_static)[4],
-            'Salário Final' => salFinal($colaboradores_static)[4]
+            'Total Vendas' => "",
+            'Comissão' => "",
+            'Salário Final' => ""
         )
     ),
 
 );
-return $colaboradores;
 
-?>
-
-
-
-
-
+return $colaboradores_static;

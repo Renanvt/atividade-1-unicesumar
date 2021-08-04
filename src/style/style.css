@@ -21,3 +21,24 @@ td.destaque{
     border: 1px solid black;
     background-color: rgb(182, 182, 182);
 }
+
+div.dados{
+    display: block;
+    color: white;
+    background-color: black;
+    font-size: 1em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height:100%;
+}
+
+body{
+    position: relative;
+    width:800px;
+}
