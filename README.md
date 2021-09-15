@@ -1,2 +1,2 @@
-# Sistema de Controle de Salários
+# Sistema de Controle de Vendas
 ![ImagemDoProjeto](img/projeto-finalizado.png)
