@@ -1,8 +1,6 @@
 <?php
 //Mostrar erros
-ini_set('display_erros', 1);
-ini_set('display_startup_erros', 1);
-error_reporting(E_ALL);
+error_reporting(E_ERROR | E_PARSE);
 //Cabeçalho
 include 'src/layout/header.php';
 ?>
